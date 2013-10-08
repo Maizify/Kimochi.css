@@ -1,0 +1,306 @@
+/* Button */
+
+.button {
+	font-size: 14px;
+	line-height: 36px;
+	height: 36px;
+	color: #FFF;
+	padding: 0 24px;
+	text-align: center;
+	text-decoration: none;
+	background-color: @purple;
+	vertical-align: middle;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	.inline-block;
+	.radius-4;
+	text-shadow: none;
+}
+input.button,
+button.button {
+	margin-left: 0;
+	margin-right: 0;
+}
+.button:hover {
+	color: #FFF;
+	background-color: lighten(@purple, 5%);
+	text-decoration: none;
+}
+
+.button.button-small {
+	font-size: 12px;
+	height: 24px;
+	line-height: 24px;
+	padding: 0 12px;
+}
+
+.button.button-blue {
+	background-color: @blue;
+}
+.button.button-gray {
+	background-color: @gray;
+}
+.button.button-green {
+	background-color: @green;
+}
+.button.button-orange {
+	background-color: @orange;
+}
+.button.button-purple {
+	background-color: @purple;
+}
+.button.button-red {
+	background-color: @red;
+}
+.button.button-yellow {
+	background-color: @yellow;
+}
+
+.button.button-blue:hover {
+	background-color: lighten(@blue, 5%);
+}
+.button.button-gray:hover {
+	background-color: lighten(@gray, 5%);
+}
+.button.button-green:hover {
+	background-color: lighten(@green, 5%);
+}
+.button.button-orange:hover {
+	background-color: lighten(@orange, 5%);
+}
+.button.button-purple:hover {
+	background-color: lighten(@purple, 5%);
+}
+.button.button-red:hover {
+	background-color: lighten(@red, 5%);
+}
+.button.button-yellow:hover {
+	background-color: lighten(@yellow, 8%);
+}
+
+.button.disabled,
+.button[disabled="disabled"],
+.button.disabled:hover,
+.button[disabled="disabled"]:hover {
+	background-color: #CCC;
+	color:#F4F4F4;
+	cursor: not-allowed;
+}
+
+
+/* Nav */
+
+.nav {
+	.cleared;
+	.radius-4;
+}
+.nav:after {
+	.cleared-after;
+}
+.nav.nav-large {
+	.radius(0);
+}
+
+.nav .nav-item {
+	float: left;
+	display: block;
+	padding: 0 12px;
+	color: #FFF;
+	font-size: 16px;
+	line-height: 36px;
+}
+.nav.nav-large .nav-item {
+	font-size: 18px;
+	line-height: 40px;
+	padding: 0 18px;
+}
+.nav .nav-item.right {
+	float: right;
+}
+.nav > .nav-item:first-child,
+.nav > .nav-head:first-child {
+	.radius(4px 0 0 4px);
+}
+.nav > .nav-item.right:last-child,
+.nav > .nav-head.right:last-child {
+	.radius(0 4px 4px 0);
+}
+.nav .nav-item:hover {
+	text-decoration: none;
+}
+
+.nav .nav-has-menu {
+	float: left;
+	position: relative;
+}
+.nav .nav-has-menu .nav-item {
+	float: none;
+}
+.nav .nav-menu {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	overflow: hidden;
+	z-index: 1;
+	.radius(0 0 4px 4px);
+}
+.nav .nav-has-menu:hover .nav-menu {
+	display: block;
+}
+.nav .nav-menu-item {
+	display: block;
+	line-height: 36px;
+	font-size: 14px;
+	padding: 0 12px;
+	color: #FFF;
+	min-width: 120px;
+	text-decoration: none;
+}
+.nav.nav-large .nav-menu-item {
+	font-size: 16px;
+	line-height: 40px;
+	padding: 0 18px;
+	min-width: 144px;
+}
+
+.nav,
+.nav-purple,
+.nav .nav-menu,
+.nav-purple .nav-menu {
+	background-color: @purple;
+}
+.nav-blue,
+.nav-blue .nav-menu {
+	background-color: @blue;
+}
+.nav-green,
+.nav-green .nav-menu {
+	background-color: @green;
+}
+.nav-orange,
+.nav-orange .nav-menu {
+	background-color: @orange;
+}
+.nav-red,
+.nav-red .nav-menu {
+	background-color: @red;
+}
+.nav-yellow,
+.nav-yellow .nav-menu {
+	background-color: @yellow;
+}
+
+.nav .nav-head,
+.nav-purple .nav-head {
+	background-color: darken(@purple, 10%);
+}
+.nav-blue .nav-head {
+	background-color: darken(@blue, 10%);
+}
+.nav-green .nav-head {
+	background-color: darken(@green, 10%);
+}
+.nav-orange .nav-head {
+	background-color: darken(@orange, 10%);
+}
+.nav-red .nav-head {
+	background-color: darken(@red, 10%);
+}
+.nav-yellow .nav-head {
+	background-color: darken(@yellow, 10%);;
+}
+
+.nav .nav-item:hover,
+.nav-purple .nav-item:hover,
+.nav .nav-menu-item:hover,
+.nav-purple .nav-menu-item:hover {
+	background-color: lighten(@purple, 10%);
+}
+.nav-blue .nav-item:hover,
+.nav-blue .nav-menu-item:hover {
+	background-color: lighten(@blue, 10%);
+}
+.nav-green .nav-item:hover,
+.nav-green .nav-menu-item:hover {
+	background-color: lighten(@green, 10%);
+}
+.nav-orange .nav-item:hover,
+.nav-orange .nav-menu-item:hover {
+	background-color: lighten(@orange, 10%);
+}
+.nav-red .nav-item:hover,
+.nav-red .nav-menu-item:hover {
+	background-color: lighten(@red, 10%);
+}
+.nav-yellow .nav-item:hover,
+.nav-yellow .nav-menu-item:hover {
+	background-color: lighten(@yellow, 10%);
+}
+
+
+
+/* Card Box */
+
+.card-box {
+	background-color: #FFF;
+	.radius-4;
+	.shadow(0 1px 2px rgba(0,0,0,0.12));
+}
+
+
+
+/* Msg Box */
+
+.msg {
+	padding: 12px;
+	color: #222;
+	line-height: 1.2;
+	border-left: 6px solid;
+	.radius-2;
+}
+
+.msg,
+.msg-purple {
+	background-color: lighten(@purple, 20%);
+	border-color: @purple;
+	color: @purple;
+}
+.msg-blue {
+	background-color: lighten(@blue, 20%);
+	border-color: @blue;
+	color: @blue;
+}
+.msg-gray {
+	background-color: lighten(@gray, 13%);
+	border-color: @gray;
+	color: darken(@gray, 15%);
+}
+.msg-green {
+	background-color: lighten(@green, 20%);
+	border-color: @green;
+	color: darken(@green, 10%);
+}
+.msg-orange {
+	background-color: lighten(@orange, 20%);
+	border-color: @orange;
+	color: darken(@orange, 5%);
+}
+.msg-red {
+	background-color: lighten(@red, 20%);
+	border-color: @red;
+	color: darken(@red, 10%);
+}
+.msg-yellow {
+	background-color: lighten(@yellow, 20%);
+	border-color: @yellow;
+	color: darken(@yellow, 18%);
+}
+
+.msg a {
+	color: #666;
+}
+.msg a:hover {
+	color: #000;
+}

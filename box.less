@@ -1,0 +1,124 @@
+/* Background */
+
+.bg-black {
+	background-color: @black;
+}
+.bg-blue {
+	background-color: @blue;
+}
+.bg-blue-light {
+	background-color: @blue-light;
+}
+.bg-gray {
+	background-color: @gray;
+}
+.bg-gray-dark {
+	background-color: @gray-dark;
+}
+.bg-gray-light {
+	background-color: @gray-light;
+}
+.bg-green {
+	background-color: @green;
+}
+.bg-orange {
+	background-color: @orange;
+}
+.bg-purple {
+	background-color: @purple;
+}
+.bg-purple-light {
+	background-color: @purple-light;
+}
+.bg-pink {
+	background-color: @pink;
+}
+.bg-red {
+	background-color: @red;
+}
+.bg-white {
+	background-color: @white;
+}
+.bg-yellow {
+	background-color: @yellow;
+}
+
+.bg-black a,
+.bg-blue a,
+.bg-gray-dark a:hover,
+.bg-green a,
+.bg-orange a,
+.bg-purple a,
+.bg-red a,
+.bg-yellow a {
+	color: #FFF;
+}
+.bg-blue-light a {
+	color: @blue;
+}
+.bg-gray a {
+	color: @gray-light;
+}
+.bg-gray-dark a {
+	color: @gray;
+}
+.bg-purple a:hover {
+	color: @purple-light;
+}
+.bg-purple-light a {
+	color: @purple;
+}
+.bg-pink a {
+	color: @red;
+}
+.bg-yellow a:hover {
+	color: darken(@yellow, 40%);
+}
+
+
+/* Border Radius */
+
+.radius-0 {
+	.radius(0);
+}
+.radius-2 {
+	.radius(2px);
+}
+.radius-4 {
+	.radius(4px);
+}
+.radius-6 {
+	.radius(6px);
+}
+.radius-8 {
+	.radius(8px);
+}
+
+
+/* Border */
+
+@border-color: #DDD;
+
+.bd {
+	border: 1px solid @border-color;
+}
+.b-t {
+	border-top: 1px solid @border-color;
+}
+.b-b {
+	border-bottom: 1px solid @border-color;
+}
+.b-l {
+	border-left: 1px solid @border-color;
+}
+.b-r {
+	border-right: 1px solid @border-color;
+}
+
+.bd.dashed,
+.b-t.dashed,
+.b-b.dashed,
+.b-l.dashed,
+.b-r.dashed {
+	border-style: dashed;
+}

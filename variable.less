@@ -1,0 +1,40 @@
+@black:			#000;
+@blue:			#5ABAF8;
+@blue-light:	#D6E2EE;
+@gray:			#CCD0D8;
+@gray-dark:		#444;
+@gray-light:	#F6F6F6;
+@green:			#2ECC71;
+@orange:		#FF6F3D;
+@pink:			#F9E7E5;
+@purple:		#AD82DA;
+@purple-light:	#D2C8ED;
+@red:			#EC6F69;
+@white:			#FFF;
+@yellow:		#FFD052;
+
+
+@font-en:	"Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-cn:	"Helvetica Neue", "Microsoft Yahei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+
+
+.radius (...) {
+	border-radius: @arguments;
+	-moz-border-radius: @arguments;
+	-webkit-border-radius: @arguments;
+	-o-border-radius: @arguments;
+}
+
+
+.shadow (...) {
+	box-shadow: @arguments;
+	-moz-box-shadow: @arguments;
+	-webkit-box-shadow: @arguments;
+	-o-box-shadow: @arguments;
+}
+
+
+.transition (...) {
+	-webkit-transition: @arguments;
+	transition: @arguments;
+}

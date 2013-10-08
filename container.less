@@ -1,0 +1,165 @@
+/* List */
+
+ul,
+ol {
+	display: block;
+	list-style-position: outside;
+}
+
+ul {
+	list-style-type: square;
+}
+ul ul {
+	list-style-type: disc;
+}
+ul ul ul {
+	list-style-type: circle;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+ul li,
+ol li {
+	margin-left: 24px;
+}
+
+ul.no-list,
+ol.no-list {
+	list-style-type: none;
+}
+ul.no-list li,
+ol.no-list li {
+	margin-left: 0;
+}
+
+
+/* Table */
+
+table.table {
+	width: 100%;
+}
+
+table.table tbody tr:nth-child(odd) {
+	background-color: #F9F9F9;
+}
+
+table.table th {
+	font-weight: bold;;
+}
+table.table th,
+table.table td {
+	padding: 6px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+table.table.table-border {
+	border: 1px solid #DDD;
+}
+table.table.table-border th,
+table.table.table-border td {
+	border: 1px solid #DDD;
+}
+
+table.table.table-row-border tbody tr {
+	border-top: 1px solid #DDD;
+}
+
+table.table.table-hover tbody tr:hover {
+	background-color: #F4F4F4;
+}
+
+
+/* Form Elements */
+
+.form-group {
+	vertical-align: middle;
+	.inline-block;
+}
+.form-opt {
+	border: 2px solid #CCC;
+	font-size: 14px;
+	font-weight: normal;
+	color:#444;
+	vertical-align: middle;
+	padding: 6px 10px;
+	outline: none;
+	.radius-4;
+}
+
+label {
+	cursor: pointer;
+	.inline-block;
+}
+label.disabled {
+	cursor: default;
+	color: #999;
+}
+
+input[type="text"] {
+	.form-opt;
+	width: 100%;
+	height: 36px;
+	line-height: 1;
+}
+textarea {
+	.form-opt;
+	width: 100%;
+	line-height: 1.5;
+}
+select[multiple] {
+	.form-opt;
+	padding: 6px;
+}
+
+
+.form-opt:focus,
+input[type="text"]:focus,
+textarea:focus,
+select[multiple]:focus {
+	border-color: @purple;
+}
+.form-opt.disabled,
+.form-opt[disabled="disabled"],
+input[type="text"].disabled,
+input[type="text"][disabled="disabled"],
+textarea.disabled,
+textarea[disabled="disabled"],
+select[multiple].disabled,
+select[multiple][disabled="disabled"],
+select[multiple].disabled option,
+select[multiple][disabled="disabled"] option {
+	cursor: not-allowed;
+	color: #999;
+	border-color: #DDD;
+	background-color: #F9F9F9;
+}
+
+
+/* Code & Pre */
+
+pre {
+	white-space: pre-wrap;
+	word-break: break-all;
+	word-wrap: break-word;
+	display: block;
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+code {
+	font-style: normal;
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+	border: 1px solid #DDD;
+	background-color: #F7F7F9;
+	padding: 3px 6px;
+	font-size: 13px;
+	color: #000;
+	.inline-block;
+	.radius-4;
+}
+code.code-block {
+	display: block;
+	padding: 12px ;
+	line-height: 16px;
+}
